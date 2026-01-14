@@ -1,0 +1,54 @@
+name: Auto-assign and date new issues
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  assign-and-label:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Assign issue to repo owner
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issueNumber = context.issue.number;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            await github.rest.issues.addAssignees({
+              owner,
+              repo,
+              issue_number: issueNumber,
+              assignees: [owner],
+            });
+
+      - name: Add created-date label
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue = context.payload.issue;
+            const createdAt = issue.created_at.split('T')[0]; // YYYY-MM-DD
+            const labelName = `created-${createdAt}`;
+
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            // Try to create label (ignore if it already exists)
+            try {
+              await github.rest.issues.createLabel({
+                owner,
+                repo,
+                name: labelName,
+                color: 'ededed',
+                description: 'Issue creation date',
+              });
+            } catch (e) {}
+
+            await github.rest.issues.addLabels({
+              owner,
+              repo,
+              issue_number: issue.number,
+              labels: [labelName],
+            });
