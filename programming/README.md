@@ -10,8 +10,8 @@
 
 This directory split it into two:
 
-- [BY PROGRAMMING LANGUAGE]()
+- [BY PROGRAMMING LANGUAGE](./language/README.md)
 	- _Books that cover a specific programming language_
 
-- [BY SUBJECT]()
-	- _Books that cover a programming-related subject in a programming-language agnostic way_
+- [BY DOMAIN](./domain/README.md)
+	- _Books that cover a programming-related domain in a programming-language agnostic way_
