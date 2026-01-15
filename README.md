@@ -74,21 +74,21 @@ Books are organized into folders based on categories:
 
 > _Book(s) that I'm currently reading_
 
-| Name                                  | Type / Category           | Start Date           | End Date            | Status                        |
-| --------------------------------------| ------------------------- | -------------------- | ------------------- | ----------------------------- |
-|                                       |                           |                      |                     |                               |
-|                                       |                           |                      |                     |                               |
-|                                       |                           |                      |                     |                               |
+| Name                                  | Type / Category           | Author               | Start Date          | End Date                      | Status                        |
+| --------------------------------------| ------------------------- | -------------------- | ------------------- | ----------------------------- | ----------------------------- |
+| Linux Shell Scripting With Bash       | Programming               | Ken O. Burtch        | Wed 15 Jan 2026     |                               |  In Progress                  |
+|                                       |                           |                      |                     |                               |                               |
+|                                       |                           |                      |                     |                               |                               |
 
 ### 📌 TO READ
 
 > _Books I plan to read in the future_
 
-| Name                                  | Type / Category           |
-| --------------------------------------| ------------------------- |
-|                                       |                           |
-|                                       |                           |
-|                                       |                           |
+| Name                                  | Type / Category           | Author               |
+| --------------------------------------| ------------------------- | -------------------- |
+|                                       |                           |                      |
+|                                       |                           |                      |
+|                                       |                           |                      |
 
 ## Disclaimer
 
