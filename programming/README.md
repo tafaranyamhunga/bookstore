@@ -8,7 +8,7 @@
 	</a>
 </p>
 
-This directory split it into two:
+This directory is split it into two:
 
 - [BY PROGRAMMING LANGUAGE](./language/README.md)
 	- _Books that cover a specific programming language_
